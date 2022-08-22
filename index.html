@@ -31,6 +31,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open__icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
           <ul class="contact list ">
             <li class="item">
               <a class="mail-link link" href="mailto:info@devstudio.com" lang="en">
@@ -47,16 +52,61 @@
                 </svg>+38 096 111 11 11</a>
             </li>
           </ul>
+          <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+              <button class="mobile-menu__close-btn" data-menu-close>
+                <svg class="mobile-menu__close-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-close_24px"></use>
+                </svg>
+              </button>
+                <nav class="page-nav">
+                  <ul class="menu-1 list">
+                    <li class="menu__list">
+                      <a class="menu__item current link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="menu__list">
+                      <a class="menu__item link" href="about.html">Портфолио</a>
+                    </li>
+                    <li class="menu__list">
+                      <a class="menu__item link" href="./index.html">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+                <ul class="contact-1 list ">
+                  <li class="item">
+                    <a class="phone-number link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  </li>
+                  <li class="item">
+                    <a class="mail-link link" href="mailto:info@devstudio.com" lang="en">
+               
+                      info@devstudio.com</a>
+                  </li>
+                </ul>
+                <ul class="menu__socials-text socials-text list">
+                  <li class="socials-text__item">
+                    <a href="#" class="socials-text__link link">Instagram</a>
+                  </li>
+                  <li class="socials-text__item">
+                    <a href="#" class="socials-text__link link">Twitter</a>
+                  </li>
+                  <li class="socials-text__item">
+                    <a href="#" class="socials-text__link link">Facebook</a>
+                  </li>
+                  <li class="socials-text__item">
+                    <a href="#" class="socials-text__link link">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
       </div>
     </header>
     <main>
-      <section class="section hero">
+      <!-- <section class="section hero">
         <div class="hero__side container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section>
-      <section class="section">
+      </section> -->
+      <!-- <section class="section">
         <div class="container">
           <h2 hidden>Информация</h2>
           <ul class="about-list list">
@@ -110,8 +160,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section about-img">
+      </section> -->
+      <!-- <section class="section about-img">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="work-progress list">
@@ -154,12 +204,17 @@
           </ul>
         </div>
 
-      </section>
-      <section class="team section">
+      </section> -->
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class=" employees list">
             <li class="team-item">
+              <picture>
+                <source srcset="" media="min-width: 1200px">
+                <source srcset="" media="min-width: 768px">
+                <source srcset="./images/phone/igor.jpg" media="min-width: 320px">
+              </picture>
               <img
                 src="./images/employees/игорь-демьяненко.jpg"
                 alt="Игорь Демьяненко"
@@ -200,6 +255,11 @@
               </ul>
             </li>
             <li class="team-item">
+              <picture>
+                <source srcset="" media="min-width: 1200px">
+                <source srcset="" media="min-width: 768px">
+                <source srcset="" media="min-width: 320px">
+              </picture>
               <img
                 src="./images/employees/ольга-репина.jpg"
                 alt="Ольга Репина"
@@ -321,8 +381,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="section clients">
+      </section> -->
+      <!-- <section class="section clients">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients list">
@@ -370,9 +430,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer ">
+    <!-- <footer class="footer ">
       <div class="container footer__address-social">
         <div class="address__contact">
         <a class="footer__logo link" href="./index.html"><span class="blue">Web</span>Studio </a>
@@ -445,8 +505,8 @@
         </div>
       </form>
     </div>
-  </footer>
-  <div class="backdrop is-hidden" data-modal>
+  </footer> -->
+  <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-btn-icon" width="11" height="11">
@@ -527,9 +587,10 @@
               <button type="submit" class="modal-btn-form">Відправити</button>
             </form>
       </div>
-  </div>
+  </div> -->
     
-  
+  <script src="./js/mobile-menu.js"></script>
+
   <script src="./js/modal.js"></script>
   </body>
 </html>
