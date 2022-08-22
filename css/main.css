@@ -1311,17 +1311,21 @@ button {
   .project {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
     gap: 30px;
+    padding: 0;
   }
-  .product:not(:last-child) {
-    padding-right: 30px;
+  .product {
+    background-color: var(--text-primary-color);
+    border: 1px solid var(--border-color);
+    width: calc((100% - 60px) / 2);
+    margin-bottom: 30px;
+  }
+  .product:hover .product__text, .product:focus .product__text {
+    transform: translate(0, 0);
   }
   .product__link {
     display: block;
     transition: box-shadow var(--transition-dur-and-func);
-    background: #ffffff;
-    border: 1px solid #eeeeee;
   }
   .product__link:hover, .product__link:focus {
     display: block;
@@ -1370,5 +1374,13 @@ button {
     padding-bottom: 20px;
     padding-right: 24px;
     color: var(--text-color);
+  }
+  .product__link {
+    display: block;
+    transition: box-shadow var(--transition-dur-and-func);
+  }
+  .product__link:hover, .product__link:focus {
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }/*# sourceMappingURL=main.css.map */
