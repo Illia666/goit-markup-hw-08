@@ -205,22 +205,43 @@
         </div>
 
       </section> -->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class=" employees list">
             <li class="team-item">
               <picture>
-                <source srcset="" media="min-width: 1200px">
-                <source srcset="" media="min-width: 768px">
-                <source srcset="./images/phone/igor.jpg" media="min-width: 320px">
-              </picture>
-              <img
+                <source
+                  srcset="
+                    ./images/phone/team1.jpg 1x,
+                    ./images/phone/team1@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                srcset="
+                  ./images/tablet/team1.jpg 1x,
+                  ./images/tablet/team1@2x.jpg 2x
+                "
+                media="(min-width: 768px)"                      />
+
+                <source
+                  srcset="
+                    ./images/desctop/team1.jpg 1x,
+                    ./images/desctop/team1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+
+                <img
                 src="./images/employees/игорь-демьяненко.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
                 height="260"
               />
+              </picture>
+
               <h3  class="employees__name">Игорь Демьяненко</h3>
               <p  class="employees__position"lang="en">Product Designer</p>
               <ul class="team-social__list">
@@ -256,16 +277,37 @@
             </li>
             <li class="team-item">
               <picture>
-                <source srcset="" media="min-width: 1200px">
-                <source srcset="" media="min-width: 768px">
-                <source srcset="" media="min-width: 320px">
-              </picture>
+                <source
+                  srcset="
+                    ./images/phone/team2.jpg 1x,
+                    ./images/phone/team2@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                srcset="
+                  ./images/tablet/team2.jpg 1x,
+                  ./images/tablet/team2@2x.jpg 2x
+                "
+                media="(min-width: 768px)"                      />
+
+                <source
+                  srcset="
+                    ./images/desctop/team2.jpg 1x,
+                    ./images/desctop/team2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+
               <img
                 src="./images/employees/ольга-репина.jpg"
                 alt="Ольга Репина"
                 width="270"
                 height="260"
               />
+            </picture>
+
               <h3 class="employees__name" >Ольга Репина</h3>
               <p class="employees__position" lang="en">Frontend Developer</p>
               <ul class="team-social__list">
@@ -300,12 +342,38 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./images/phone/team3.jpg 1x,
+                    ./images/phone/team3@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                srcset="
+                  ./images/tablet/team3.jpg 1x,
+                  ./images/tablet/team3@2x.jpg 2x
+                "
+                media="(min-width: 768px)"                      />
+
+                <source
+                  srcset="
+                    ./images/desctop/team3.jpg 1x,
+                    ./images/desctop/team3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+
+                <img
                 src="./images/employees/николай-тарасов.jpg"
                 alt="Николай Тарасов"
                 width="270"
                 height="260"
               />
+            </picture>
+  
               <h3 class="employees__name" >Николай Тарасов</h3>
               <p class="employees__position" lang="en">Marketing</p>
               <ul class="team-social__list">
@@ -340,12 +408,38 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
+              <picture>
+                <source
+                  srcset="
+                    ./images/phone/team4.jpg 1x,
+                    ./images/phone/team4@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                srcset="
+                  ./images/tablet/team4.jpg 1x,
+                  ./images/tablet/team4@2x.jpg 2x
+                "
+                media="(min-width: 768px)"                      />
+
+                <source
+                  srcset="
+                    ./images/desctop/team4.jpg 1x,
+                    ./images/desctop/team4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+
+                <img
                 src="./images/employees/михаил-ермаков.jpg"
                 alt="Михаил Ермаков"
                 width="270"
                 height="260"
               />
+            </picture>
+ 
               <h3 class="employees__name" >Михаил Ермаков</h3>
               <p class="employees__position" lang="en">UI Designer</p>
               <ul class="team-social__list">
@@ -381,7 +475,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="section clients">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
@@ -506,7 +600,7 @@
       </form>
     </div>
   </footer> -->
-  <!-- <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-btn-icon" width="11" height="11">
@@ -587,7 +681,7 @@
               <button type="submit" class="modal-btn-form">Відправити</button>
             </form>
       </div>
-  </div> -->
+  </div>
     
   <script src="./js/mobile-menu.js"></script>
 
