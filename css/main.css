@@ -1078,65 +1078,62 @@ button {
   border: 1px solid var(--active-color);
 }
 
-.footer {
-  background-color: var(--hero-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.maps-go {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: var(--text-primary-color);
-}
-
-.footer__list-mail,
+@media screen and (max-width: 767px) {
+  .footer {
+    background-color: var(--hero-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  .footer__logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.1923076923;
+    color: var(--text-primary-color);
+    display: block;
+    margin-bottom: 20px;
+  }
+  .address {
+    font-style: normal;
+  }
+  .address__contact {
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+  .footer__list :last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .footer__list:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer__list {
+    padding-left: auto;
+    padding-right: auto;
+  }
+  .maps-go {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7142857143;
+    color: var(--text-primary-color);
+  }
+  .footer__list-mail,
 .footer__list-phone {
-  color: rgba(255, 255, 255, 0.6);
-  transition: color var(--transition-dur-and-func);
-}
-
-.mail-link:hover,
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--transition-dur-and-func);
+  }
+  .mail-link:hover,
 .mail-link:focus,
 .footer__list-mail:hover,
 .footer__list-mail:focus {
-  color: var(--active-color);
+    color: var(--active-color);
+  }
+  .footer__address-social {
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
-
-.footer__logo {
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.1923076923;
-  color: var(--text-primary-color);
-  display: block;
-  margin-bottom: 20px;
-}
-
-.address {
-  font-style: normal;
-}
-
-.address__contact {
-  align-items: baseline;
-}
-
-.footer__list :last-of-type {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.footer__list:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer__address-social {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
 .social__title {
   margin-bottom: 20px;
   font-size: 14px;
