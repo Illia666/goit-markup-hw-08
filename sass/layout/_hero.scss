@@ -7,10 +7,10 @@
     margin-left: auto;
     background-repeat: no-repeat;
     background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
       url(../images/phone/backround.jpg);
     background-position: center;
     background-size: cover;
@@ -21,7 +21,11 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url(../images/phone/backround@2x.jpg);
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), url(../images/phone/backround@2x.jpg);
     }
   }
   
@@ -62,7 +66,11 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url(../images/tablet/backround@2x.jpg);
+      background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), url(../images/tablet/backround@2x.jpg);
     }
   }
   .hero__title {
@@ -103,7 +111,11 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/backround/backround.jpg);
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), url(../images/backround/backround.jpg);
   }
 }
 }
