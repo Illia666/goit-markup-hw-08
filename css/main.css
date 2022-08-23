@@ -2053,7 +2053,7 @@ button {
     transition: background-color var(--transition-dur-and-func);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .form__subscribe .form__input {
     width: 100%;
     padding: 16px 15px;
@@ -2063,6 +2063,7 @@ button {
     color: var(--background);
     background: transparent;
     outline: none;
+    padding-bottom: 20px;
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -2106,9 +2107,9 @@ button {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.875;
+    margin-top: 20px;
     background-color: var(--active-color);
     color: var(--text-primary-color);
-    margin-top: 20px;
     align-items: center;
     justify-content: center;
     padding: 10px 29px;
@@ -2120,6 +2121,9 @@ button {
     min-width: 450px;
     margin-right: auto;
     margin-left: auto;
+  }
+  .form__input {
+    padding-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
