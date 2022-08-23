@@ -446,6 +446,12 @@ button {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  flex-direction: column;
+  right: 0;
+  overflow: scroll;
+  height: 100vh;
+  width: 100vw;
+  padding: 48px 10px 48px 40px;
 }
 
 .mobile-menu.is-open {
@@ -453,12 +459,6 @@ button {
   visibility: visible;
   pointer-events: auto;
   transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
-}
-
-.mobile-menu__container {
-  position: relative;
-  padding-left: 40px;
-  padding-top: 48px;
 }
 
 .mobile-menu__close-btn {
@@ -565,7 +565,7 @@ button {
     color: var(--active-color);
   }
   .menu-1 {
-    margin-bottom: 270px;
+    margin-bottom: 302px;
   }
   .contact-1 {
     margin-bottom: 64px;
