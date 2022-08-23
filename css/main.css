@@ -26,7 +26,7 @@
   overflow: hidden;
 }
 
-.form__subscribe .button-submit, .social__link, .social__list, .clients__link, .team-social__link, .modal-form-check-desc, .modal-close-btn {
+.form__subscribe .button-submit, .social__link, .social__list, .team-social__link, .modal-form-check-desc, .modal-close-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1341,30 +1341,83 @@ button {
   height: 20px;
 }
 
-.clients {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 50px;
+@media screen and (max-width: 767px) {
+  .clients {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+  .clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 210px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    fill: var(--icon-color);
+    transition: fill var(--transition-dur-and-func), border var(--transition-dur-and-func);
+  }
+  .clients__link:hover, .clients__link:focus {
+    fill: var(--active-color);
+    border: 1px solid var(--active-color);
+  }
 }
-
-.clients__item {
-  width: calc((100% - 150px) / 6);
+@media screen and (min-width: 768px) {
+  .clients {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+  .clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 226px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    fill: var(--icon-color);
+    transition: fill var(--transition-dur-and-func), border var(--transition-dur-and-func);
+  }
+  .clients__link:hover, .clients__link:focus {
+    fill: var(--active-color);
+    border: 1px solid var(--active-color);
+  }
 }
-
-.clients__link {
-  flex-wrap: wrap;
-  height: 92px;
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
-  fill: var(--icon-color);
-  transition: fill var(--transition-dur-and-func), border var(--transition-dur-and-func);
+@media screen and (min-width: 1200px) {
+  .clients {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  .clients__item {
+    width: calc((100% - 150px) / 6);
+  }
+  .clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    fill: var(--icon-color);
+    transition: fill var(--transition-dur-and-func), border var(--transition-dur-and-func);
+  }
+  .clients__link:hover, .clients__link:focus {
+    fill: var(--active-color);
+    border: 1px solid var(--active-color);
+  }
 }
-.clients__link:hover, .clients__link:focus {
-  fill: var(--active-color);
-  border: 1px solid var(--active-color);
-}
-
 @media screen and (max-width: 767px) {
   .footer {
     background-color: var(--hero-color);
