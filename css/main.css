@@ -1528,6 +1528,61 @@ button {
     justify-content: space-between;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    background-color: var(--hero-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: left;
+  }
+  .maps-go {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-primary-color);
+  }
+  .footer__list-mail,
+.footer__list-phone {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--transition-dur-and-func);
+  }
+  .mail-link:hover,
+.mail-link:focus,
+.footer__list-mail:hover,
+.footer__list-mail:focus {
+    color: var(--active-color);
+  }
+  .footer__logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.1923076923;
+    color: var(--text-primary-color);
+    display: block;
+    margin-bottom: 20px;
+  }
+  .address {
+    font-style: normal;
+  }
+  .address__contact {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .footer__list :last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .footer__list:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer__address-social {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 @media screen and (max-width: 767px) {
   .social__title {
     margin-bottom: 20px;
@@ -1618,6 +1673,52 @@ button {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social {
+    margin-right: 93px;
+  }
+  .social__title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1428571429;
+    text-transform: uppercase;
+    font-style: normal;
+    color: var(--background);
+  }
+  .social__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .social__list-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--icon-bg-color);
+  }
+  .social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    flex-wrap: wrap;
+    fill: var(--text-primary-color);
+    transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
+  }
+  .social__link:hover, .social__link:focus {
+    background-color: var(--active-color);
+  }
+  .social__link-logo {
+    width: 20px;
+    height: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1748,6 +1849,71 @@ button {
     min-width: 450px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__subscribe .form__input {
+    min-width: 358px;
+    padding: 16px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: var(--background);
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: border var(--transition-dur-and-func);
+  }
+  .form__subscribe .form__input:focus {
+    outline: none;
+    border: 1px solid var(--active-color);
+  }
+  .form__subscribe .form__input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--background);
+  }
+  .form__subscribe .offer {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1428571429;
+    text-transform: uppercase;
+    color: var(--background);
+  }
+  .form__subscribe-fields {
+    display: flex;
+    border: none;
+    padding: 0;
+  }
+  .form__subscribe .form__field {
+    margin-right: 12px;
+  }
+  .form__subscribe .button-submit {
+    border: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    background-color: var(--active-color);
+    color: var(--text-primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 29px;
+    box-shadow: 0px 4px 4px rgba(230, 13, 13, 0.15);
+    border-radius: 4px;
+    transition: background-color var(--transition-dur-and-func);
   }
 }
 @media screen and (max-width: 767px) {
