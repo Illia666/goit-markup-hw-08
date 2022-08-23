@@ -1047,6 +1047,16 @@ button {
     flex-basis: calc((100% - 30px) / 5);
   }
 }
+@media screen and (max-width: 767px) {
+  .about-img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .about-img {
+    display: none;
+  }
+}
 .about-img {
   padding-top: 0;
 }
