@@ -9,6 +9,7 @@
     fill: var(--icon-color);
     transition: color var(--transition-dur-and-func),
       fill var(--transition-dur-and-func);
+      margin-bottom: 32px;
   }
   .menu {
     display: none;
@@ -74,8 +75,9 @@
 .mail-link {
   display: flex;
   align-items: center;
-  @include font(500, 24px, 28px);
+  @include font(500, 21px, 28px);
   letter-spacing: 0.02em;
+  flex-wrap: wrap;
   color: var(--text-color);
   fill: var(--icon-color);
   transition: color var(--transition-dur-and-func),
@@ -198,6 +200,7 @@ color: var(--active-color);
   align-items: center;
   @include font(500, 24px, 28px);
   letter-spacing: 0.02em;
+  flex-wrap: wrap;
   color: var(--text-color);
   fill: var(--icon-color);
   transition: color var(--transition-dur-and-func),
@@ -216,7 +219,10 @@ color: var(--active-color);
   fill: var(--icon-color);
   transition: color var(--transition-dur-and-func),
     fill var(--transition-dur-and-func);
+    margin-bottom: 32px;
+   
 }
+
 .phone-number:hover,
 .phone-number:focus,
 .footer__list-phone:hover,

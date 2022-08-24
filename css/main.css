@@ -752,6 +752,7 @@ button {
     color: var(--active-color);
     fill: var(--icon-color);
     transition: color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
+    margin-bottom: 32px;
   }
   .menu {
     display: none;
@@ -816,10 +817,11 @@ button {
   .mail-link {
     display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 500;
-    line-height: 1.1666666667;
+    line-height: 1.3333333333;
     letter-spacing: 0.02em;
+    flex-wrap: wrap;
     color: var(--text-color);
     fill: var(--icon-color);
     transition: color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
@@ -939,6 +941,7 @@ button {
     font-weight: 500;
     line-height: 1.1666666667;
     letter-spacing: 0.02em;
+    flex-wrap: wrap;
     color: var(--text-color);
     fill: var(--icon-color);
     transition: color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
@@ -957,6 +960,7 @@ button {
     color: var(--active-color);
     fill: var(--icon-color);
     transition: color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
+    margin-bottom: 32px;
   }
   .phone-number:hover,
 .phone-number:focus,
@@ -1954,7 +1958,6 @@ button {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 60px;
   }
   .social__list-item {
     display: flex;
@@ -1981,6 +1984,9 @@ button {
   .social__link-logo {
     width: 20px;
     height: 20px;
+  }
+  .social {
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
