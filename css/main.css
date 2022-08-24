@@ -1852,7 +1852,6 @@ button {
     font-style: normal;
   }
   .address__contact {
-    margin-right: 30px;
     margin-bottom: 0;
   }
   .footer__list :last-of-type {
@@ -1959,13 +1958,10 @@ button {
   .footer__address-social {
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
-  .social {
-    margin-right: 93px;
-  }
   .social__title {
     margin-bottom: 20px;
     font-size: 14px;

@@ -90,7 +90,7 @@
 .footer__address-social{
   flex-wrap: wrap;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 }
 
@@ -98,9 +98,6 @@
 
 @media screen and (min-width: 1200px) {
 
-  .social{
-    margin-right: 93px;
-  }
 .social__title {
   margin-bottom: 20px;
   @include font(700, 14px, 16px);
