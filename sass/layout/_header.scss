@@ -1,4 +1,137 @@
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 325px) {
+  .phone-number {
+    display: flex;
+    align-items: center;
+    @include font(500, 25px, 40px);
+    letter-spacing: 0.02em;
+    color: var(--active-color);
+    fill: var(--icon-color);
+    transition: color var(--transition-dur-and-func),
+      fill var(--transition-dur-and-func);
+  }
+  .menu {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+  .logo {
+    font-family: "Raleway", sans-serif;
+    @include font(700, 26px, 31px);
+    color: var(--black);
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    display: block;
+    padding-left: 15px;
+  }
+  .blue {
+    color: var(--active-color);
+  }
+  
+  .mobile-menu-open {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+  }
+  .page-header .contact-link {
+  color: var(--text-color);
+}
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+.menu__item {
+  @include font(500, 40px, 47px);
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--transition-dur-and-func);
+
+  &.current {
+    position: relative;
+    color: var(--active-color);
+  }
+
+  &.current,
+  &:focus,
+  &:hover,
+  .contact:focus,
+  .contact:hover {
+    color: var(--active-color);
+  }
+}
+.menu__list:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mail-link {
+  display: flex;
+  align-items: center;
+  @include font(500, 24px, 28px);
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  fill: var(--icon-color);
+  transition: color var(--transition-dur-and-func),
+    fill var(--transition-dur-and-func);
+}
+.nav-contacts-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.phone-number:hover,
+.phone-number:focus,
+.footer__list-phone:hover,
+.footer__list-phone:focus {
+  color: var(--active-color);
+}
+.menu-1{
+  margin-bottom: 302px;
+}
+.contact-1{
+  margin-bottom: 64px;
+}
+
+.menu__socials-text{
+  display: flex;
+  flex-wrap: wrap;
+}
+.socials-text__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+  &:not(:last-child):after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+}
+.socials-text__link{
+  @include font(500, 18px, 22px);
+letter-spacing: 0.02em;
+
+color: var(--active-color);
+
+}
+.header{
+  border: 1px solid #ECECEC;
+}
+}
+@media screen and (min-width: 326px) {
   .menu {
     display: none;
   }
