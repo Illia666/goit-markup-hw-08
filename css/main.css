@@ -26,7 +26,7 @@
   overflow: hidden;
 }
 
-.team-social__link, .modal-close-btn {
+.modal-close-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -842,6 +842,7 @@ button {
   }
   .menu__socials-text {
     display: flex;
+    flex-wrap: wrap;
   }
   .socials-text__item {
     position: relative;
@@ -865,6 +866,9 @@ button {
     line-height: 1.2222222222;
     letter-spacing: 0.02em;
     color: var(--active-color);
+  }
+  .header {
+    border: 1px solid #ECECEC;
   }
 }
 .page-header-container {
@@ -1142,7 +1146,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding: 200px 0;
+    padding: 118px 0;
     background-color: var(--hero-color);
     text-align: center;
     max-width: 1199px;
@@ -1191,7 +1195,7 @@ button {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backround/backround.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctop/backround@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1564,68 +1568,6 @@ button {
     height: 20px;
   }
 }
-.team {
-  background: #f5f4fa;
-}
-
-.team-item {
-  background-color: var(--text-primary-color);
-}
-
-.employees {
-  margin-top: 50px;
-  display: flex;
-  gap: 30px;
-}
-
-.employees__name {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.1875;
-  text-align: center;
-  color: var(--title-color);
-  margin-bottom: 10px;
-  padding-top: 30px;
-}
-
-.employees__position {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.1875;
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-.team-social__list {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin: 0px;
-  padding-bottom: 30px;
-}
-
-.team__social {
-  display: flex;
-  justify-content: center;
-}
-
-.team-social__link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  fill: var(--icon-color);
-  transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
-}
-.team-social__link:hover, .team-social__link:focus {
-  fill: var(--text-primary-color);
-  background: var(--active-color);
-}
-
-.team-social__icon {
-  width: 20px;
-  height: 20px;
-}
-
 @media screen and (max-width: 767px) {
   .clients {
     display: flex;
@@ -2063,7 +2005,7 @@ button {
     transition: background-color var(--transition-dur-and-func);
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .form__subscribe .form__input {
     width: 100%;
     padding: 16px 15px;

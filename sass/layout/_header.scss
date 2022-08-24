@@ -96,8 +96,10 @@
 .contact-1{
   margin-bottom: 64px;
 }
+
 .menu__socials-text{
   display: flex;
+  flex-wrap: wrap;
 }
 .socials-text__item {
   position: relative;
@@ -122,6 +124,9 @@ letter-spacing: 0.02em;
 
 color: var(--active-color);
 
+}
+.header{
+  border: 1px solid #ECECEC;
 }
 }
 
