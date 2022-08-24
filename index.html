@@ -166,11 +166,20 @@
           <ul class="work-progress list">
             <li>
               <div class="work-progress__item">
-                <img
-                src="./images/work/laptopj.jpg"
-                alt="ноутбук"
-                width="370"
-                height="294"/>
+                <picture>
+                  <source   srcset="
+                  ./images/desctop/about-img.jpg 1x,
+                  ./images/desctop/about-img@2x.jpg  2x
+                "
+                media="(min-width: 1200px)"
+              /> 
+              <img
+              src="./images/work/laptopj.jpg"
+              alt="ноутбук"
+              width="370"
+              height="294"/>
+              </picture>
+
                 <p class="work-progress-text">
                   Десктопні додатки
                 </p>
@@ -178,11 +187,20 @@
             </li>
             <li>
               <div class="work-progress__item">
-                <img
+                <picture>
+                  <source   srcset="
+                  ./images/desctop/about-img2.jpg 1x,
+                  ./images/desctop/about-img2@2x.jpg  2x
+                "
+                media="(min-width: 1200px)"
+              /> 
+              <img
                 src="./images/work/tabletj.jpg"
                 alt="планшет"
                 width="370"
                 height="294"/>
+              </picture>
+  
                 <p class="work-progress-text">
                   Мобільні додатки
                 </p>
@@ -190,11 +208,20 @@
             </li>
             <li>
               <div class="work-progress__item">
-                <img
-                src="./images/work/laptop2j.jpg"
-                alt="ноутбук"
-                width="370"
-                height="294"/>
+                <picture>
+                  <source   srcset="
+                  ./images/desctop/about-img3.jpg 1x,
+                  ./images/desctop/about-img3@2x.jpg  2x
+                "
+                media="(min-width: 1200px)"
+              /> 
+              <img
+              src="./images/work/laptop2j.jpg"
+              alt="ноутбук"
+              width="370"
+              height="294"/>
+              </picture>
+
                 <p class="work-progress-text">
                 Дизайнерські рішення
                 </p>
@@ -530,7 +557,7 @@
         <div class="address__contact">
         <a class="footer__logo link" href="./index.html"><span class="blue">Web</span>Studio </a>
         <address class="address">
-          <div class="address__contact">
+          <div class="address__contact-div">
             <ul class=" list">
               <li class="footer__list">
                 <a class="maps-go link"

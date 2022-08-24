@@ -13,7 +13,6 @@
   .about__description {
     @include font(400, 14px, 24px);
     flex-wrap: wrap;
-    width: 450px;
     height: 70px;
   }
   .feature-icon {
