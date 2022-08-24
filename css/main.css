@@ -1195,6 +1195,22 @@ button {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backround/backround.jpg);
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.3636363636;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-primary-color);
+  }
+}
 @media screen and (max-width: 767px) {
   .about-list {
     flex-wrap: wrap;
