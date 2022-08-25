@@ -301,9 +301,9 @@ button {
     transition: background-color var(--transition-dur-and-func);
   }
   .modal-form-check-desc {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
-    line-height: 1.1666666667;
+    line-height: 1.4;
     color: var(--text-color);
   }
   .modal-form-check:checked + .modal-form-check-desc::before {
@@ -320,6 +320,7 @@ button {
   }
   .modal-form-check-desc-link {
     display: inline-block;
+    flex-wrap: wrap;
     color: var(--active-color);
     border-bottom: 1px solid var(--active-color);
   }
@@ -1883,11 +1884,6 @@ button {
   .footer__list:not(:last-child) {
     margin-bottom: 9px;
   }
-  .footer__address-social {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer {
@@ -1934,13 +1930,6 @@ button {
   }
   .footer__list:not(:last-child) {
     margin-bottom: 9px;
-  }
-  .footer__address-social {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2260,6 +2249,10 @@ button {
   }
   .form__subscribe .form__field {
     margin-right: 12px;
+  }
+  .footer-subscribe {
+    min-width: 450px;
+    margin: 0;
   }
   .form__subscribe .button-submit {
     border: none;

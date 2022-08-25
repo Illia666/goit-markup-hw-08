@@ -98,7 +98,7 @@
     }
   
     & {
-     @include font(400,12px,14px);
+     @include font(400,10px,14px);
       color: var(--text-color);
     }
     .modal-form-check:checked + &::before {
@@ -118,7 +118,7 @@
   
   .modal-form-check-desc-link {
     display: inline-block;
-  
+  flex-wrap: wrap;
     color: var(--active-color);
     border-bottom: 1px solid var(--active-color);
   }
