@@ -1517,6 +1517,8 @@ button {
   }
   .team-item {
     background-color: var(--text-primary-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
   .employees {
     margin-top: 50px;
@@ -1584,6 +1586,8 @@ button {
   }
   .team-item {
     background-color: var(--text-primary-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
   .employees {
     margin-top: 50px;
@@ -1650,6 +1654,8 @@ button {
   }
   .team-item {
     background-color: var(--text-primary-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
   .employees {
     margin-top: 50px;
@@ -2023,7 +2029,7 @@ button {
   .footer__address-social {
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2067,6 +2073,11 @@ button {
   .social__link-logo {
     width: 20px;
     height: 20px;
+  }
+  .footer__address-social {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media screen and (max-width: 767px) {

@@ -4,18 +4,20 @@
   }
   .team-item {
     background-color: var(--text-primary-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
   .employees {
     margin-top: 50px;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    width: 100%
-    
+    width: 100%;
   }
   .employees__name {
     @include font(500, 16px, 19px);
-  
+
     text-align: center;
     color: var(--title-color);
     margin-bottom: 10px;
@@ -23,7 +25,7 @@
   }
   .employees__position {
     @include font(400, 16px, 19px);
-  
+
     text-align: center;
     margin-bottom: 16px;
   }
@@ -45,7 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-        fill: var(--icon-color);
+    fill: var(--icon-color);
     transition: background-color var(--transition-dur-and-func),
       fill var(--transition-dur-and-func);
     &:hover,
@@ -54,7 +56,7 @@
       background: var(--active-color);
     }
   }
-  
+
   .team-social__icon {
     width: 20px;
     height: 20px;
@@ -64,9 +66,7 @@
     text-align: center;
     color: var(--title-color);
   }
-  
 }
-
 
 @media screen and (min-width: 768px) {
   .team {
@@ -74,16 +74,20 @@
   }
   .team-item {
     background-color: var(--text-primary-color);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
   .employees {
     margin-top: 50px;
     display: flex;
     gap: 30px;
-    flex-wrap: wrap
+    flex-wrap: wrap;
   }
   .employees__name {
     @include font(500, 16px, 19px);
-  
+
     text-align: center;
     color: var(--title-color);
     margin-bottom: 10px;
@@ -91,7 +95,7 @@
   }
   .employees__position {
     @include font(400, 16px, 19px);
-  
+
     text-align: center;
     margin-bottom: 16px;
   }
@@ -113,7 +117,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-        fill: var(--icon-color);
+    fill: var(--icon-color);
     transition: background-color var(--transition-dur-and-func),
       fill var(--transition-dur-and-func);
     &:hover,
@@ -133,28 +137,26 @@
   }
 }
 
-
-
-
-
-
-
 @media screen and (min-width: 1200px) {
   .team {
     background: #f5f4fa;
   }
   .team-item {
     background-color: var(--text-primary-color);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
   }
   .employees {
     margin-top: 50px;
     display: flex;
     gap: 30px;
-    flex-wrap: nowrap
+    flex-wrap: nowrap;
   }
   .employees__name {
     @include font(500, 16px, 19px);
-  
+
     text-align: center;
     color: var(--title-color);
     margin-bottom: 10px;
@@ -162,7 +164,7 @@
   }
   .employees__position {
     @include font(400, 16px, 19px);
-  
+
     text-align: center;
     margin-bottom: 16px;
   }
@@ -183,7 +185,8 @@
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;    fill: var(--icon-color);
+    justify-content: center;
+    fill: var(--icon-color);
     transition: background-color var(--transition-dur-and-func),
       fill var(--transition-dur-and-func);
     &:hover,
@@ -196,7 +199,6 @@
     width: 20px;
     height: 20px;
   }
-
 }
 // .team {
 //   background: #f5f4fa;

@@ -93,7 +93,7 @@
 .footer__address-social{
   flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 }
 
@@ -146,5 +146,10 @@
 .social__link-logo {
   width: 20px;
   height: 20px;
+}
+.footer__address-social{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
 }
 }
