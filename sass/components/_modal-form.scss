@@ -96,7 +96,7 @@
     }
   
     & {
-     @include font(400,10px,14px);
+     @include font(400,9px,14px);
       color: var(--text-color);
     }
     .modal-form-check:checked + &::before {

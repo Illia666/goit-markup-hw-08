@@ -107,11 +107,12 @@
 }
 .socials-text__item {
   position: relative;
+  flex-basis: calc(50% - 94px);
 
   &:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 64px;
   }
-  &:not(:last-child):after {
+  &:after {
     content: "";
     position: absolute;
     right: -10px;
@@ -120,7 +121,9 @@
     height: 100%;
     width: 1px;
     background-color: rgba(33, 33, 33, 0.2);
+    left: 137px;
   }
+
 }
 .socials-text__link{
   @include font(500, 18px, 22px);
@@ -132,6 +135,8 @@ color: var(--active-color);
 .header{
   border: 1px solid #ECECEC;
 }
+
+
 }
 
 
