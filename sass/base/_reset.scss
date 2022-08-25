@@ -34,3 +34,6 @@ button {
 background-color: var(--active-color);
 color: var(--text-primary-color);
 }
+.html, body{
+  overflow-x: hidden;
+}
