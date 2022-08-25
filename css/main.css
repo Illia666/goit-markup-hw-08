@@ -873,7 +873,7 @@ button {
     border: 1px solid #ECECEC;
   }
 }
-@media screen and (min-width: 326px) {
+@media screen and (max-width: 767px) {
   .menu {
     display: none;
   }
