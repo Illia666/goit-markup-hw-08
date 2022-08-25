@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 321px) {
   .phone-number {
     display: flex;
     align-items: center;
@@ -140,7 +140,7 @@ color: var(--active-color);
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width:322px ) and (max-width:767px ){
   .menu {
     display: none;
   }
